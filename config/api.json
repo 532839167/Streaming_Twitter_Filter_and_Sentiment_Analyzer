@@ -1,10 +1,10 @@
 {
-    "consumer_key": "4cC9GKZR6q4E9PI0mb3OcdsyD",
-    "consumer_secret": "vGEhCFz8fQ06BzXOKm1b340vOwNypA7UNgFR694yL6iiWhUvKt",
-    "access_token": "1413341957317791744-jHCtJ0GHasj7shIDqElfmtdxTimjwo",
-    "access_token_secret": "AInykrnN373zNU9LXJWHcD0zZbPGyxonlNo6lYB4GPIlN",
-    "API Key": "4cC9GKZR6q4E9PI0mb3OcdsyD",
-    "API Secret Key": "vGEhCFz8fQ06BzXOKm1b340vOwNypA7UNgFR694yL6iiWhUvKt",
-    "Bearer Token": "AAAAAAAAAAAAAAAAAAAAAPMLRgEAAAAAFzaboXy8166oS%2Fg3c5xNH9Qh4LA%3DjR5VLherb9LF62r3mhOynVSffJ24Lj12yaanMdLkUxcRGq2Qt8"
+    "consumer_key": "4cC9GKZR6q4E9SECRET",
+    "consumer_secret": "vGEhCFz8fQ06BzXOKm1b340vOwNySECRET",
+    "access_token": "1413341957317791744-jHCtJ0GHasjSECRET",
+    "access_token_secret": "AInykrnN373zNU9LXJWHcD0zSECRET",
+    "API Key": "4cC9GKZR6q4E9PI0mbSECRET",
+    "API Secret Key": "vGEhCFz8fQ06BzXOKm1b340vOwNypSECRET",
+    "Bearer Token": "AAAAAAAAAAAAAAAAAAAAAPMLRgEAAAASECRET"
 
 }
