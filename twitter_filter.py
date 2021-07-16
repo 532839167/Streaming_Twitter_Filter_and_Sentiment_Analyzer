@@ -1,8 +1,12 @@
 import tweepy
 import datetime
+import json
+import re
 from tweet_analyzer import TweetAnalyzer
 from tweet_store import TweetStore
-import json
+from langdetect import detect
+from langdetect import DetectorFactory
+
 
 file_path = 'config/api.json'
 
@@ -19,12 +23,15 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 store = TweetStore()
+DetectorFactory.seed = 0
 
 class StreamListener(tweepy.StreamListener):
 
     def on_status(self, status):
 
-        if ('RT @' not in status.text):
+        flag = re.search('[a-zA-Z]', status.text) and ('RT @' not in status.text)
+
+        if flag and (detect(status.text) == 'en'):
             analyzer = TweetAnalyzer()
             polarity = analyzer.predict(status.text)
             # polarity = sent.polarity
